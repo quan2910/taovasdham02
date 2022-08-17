@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function goiham() {
+        let sl = prompt('Nhap do dai mang')
+        arr = [];
+        for (i = 0 ; i < sl ; i++) {
+            arr[i] = Math.floor(Math.random()*50)
+        }
+        document.write('Mang cua ban la : ' + arr + '<br>')
+        return arr;
+    }
+    function swap(arr) {
+        arr.reverse();
+        return arr;
+    }
+    function main() {
+        let arrNum = goiham();
+        document.write('Mang sau khi dao nguoc la : ' + swap(arrNum))
+    }
+    main()
+</script>
+</body>
+</html>

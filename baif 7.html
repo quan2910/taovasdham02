@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function doi(a,b) {
+        let c = a;
+            a = b;
+            b = c;
+        return [a,b];
+    }
+    function main() {
+        let so1 = prompt('nhap so thu nhat');
+        let so2 = prompt('nhap so thu hai');
+        document.write('hai so ban nhap lan luot la: '+[so1,so2] + '<br>')
+        document.write('sau khi doi cho la: '+doi(so1, so2))
+    }main()
+</script>
+</body>
+</html>
